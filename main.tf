@@ -11,6 +11,22 @@ provider "aws" {
   region = var.region
 }
 
+module "network" {
+  source = "./modules/network"
+}
+
+module "security-groups" {
+  source = "./modules/security"
+}
+
+module "load-balancer"{
+  source = "./modules/load-balancing"
+}
+
+module "server-instance" {
+  source = "./modules/server"
+}
+/*
 resource "aws_vpc" "server-vpc" {
   cidr_block           = var.vpc_cidr
   enable_dns_support   = true
@@ -266,4 +282,4 @@ resource "aws_lb_target_group_attachment" "zaka4alka-server" {
   target_id        = "${aws_instance.server.id}"
   port             = 80
 }
-
+*/
