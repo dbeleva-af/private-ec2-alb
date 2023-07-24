@@ -1,1 +1,0 @@
-{"Modules":[{"Key":"","Source":"","Dir":"."},{"Key":"load-balancer","Source":"./modules/load-balancing","Dir":"modules/load-balancing"},{"Key":"network","Source":"./modules/network","Dir":"modules/network"},{"Key":"security-groups","Source":"./modules/security","Dir":"modules/security"},{"Key":"server-instance","Source":"./modules/server","Dir":""}]}
